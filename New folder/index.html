@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="CodeHim">
+  <title>Add To Cart using HTML Example</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,600,400italic'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="shop.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="css/ionicons.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+
+
+
+  </header>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid site-header">
+        <div class="navbar-header">
+           
+                <img class="logo"  src="https://images-platform.99static.com//zvgtch1g-AfvYKsLleHclChDLYE=/222x209:1707x1694/fit-in/500x500/projects-files/101/10165/1016553/09deac31-4bdc-4bb6-b6f2-e644b4ff0500.png" />
+                
+      </div>
+     
+        <ul class="nav navbar-nav navbar-right list-inline ">
+         
+        <h4>
+ 
+          <li><button class="open"  type="button" ><h2>Your Cart <i class="fa fa-lg fa-shopping-cart  "></i></button></li>
+          </h2>
+           
+           
+          
+        </ul>
+    </div>
+</nav>
+
+   
+
+    <div class="filter-grid" style="background-color: black;">
+      <div class="inner-wrap">
+      </div>
+    </div>
+  
+  <div id="slider">
+  
+    <div id="slide-1" class="slide slide-1 active">
+      <div class="split split-left">
+        <div class="text-corner product-under">
+          <h2 class="productName"  style="color: #d60000;">The New White Jordans</h2>
+         
+          <h2 class="hide productId">17</h2>
+          <img class="first product-image hide" src="https://sneakernews.com/wp-content/uploads/2019/08/air-jordan-4-white-metallic-red-CT8527-112-official-images-1.jpg">
+          <button class="animated-button addToCart" style="z-index: 9999;">know more</button>
+        </div>
+      </div>
+      <div class="split split-right"> <img class="first product-image" src="https://sneakernews.com/wp-content/uploads/2019/08/air-jordan-4-white-metallic-red-CT8527-112-official-images-1.jpg">     </div>
+    </div>
+    <div id="slide-2" class="slide slide-2"   >
+      <div class="split split-left" >
+        <div class="text-corner product-under">
+          <h2 class="productName" style="color: #dfdfdf;" >The New White Jordans</h2>
+          
+      
+          <button class="animated-button  addToCart">know More</button>
+        </div>
+      </div>
+      <div class="split split-right" ><img class="second" src="https://s3.amazonaws.com/nikeinc/assets/94581/CT8527-112_A1_Lateral_HR_hd_1600.jpg" alt="">
+      </div>
+    </div>
+    <div id="slide-3" class="slide slide-3">
+      <div class="split split-left" >
+        <div class="text-corner product-under">
+          <h2 class="productName" style="color: #2060c2;">The New blue Jordans</h2>
+         
+
+          <button class="animated-button  addToCart">know More</button>
+        </div>
+      </div>
+      <div class="split split-right" ><img class="third" src="https://sneakernews.com/wp-content/uploads/2021/05/Jordan-Pro-Strong-White-Royal-DC8418-104-1.jpg">
+  </div>
+    </div>
+    <div class="swip"> <button><i class="fa-solid fa-arrow-left"></i></button>
+      <button  id="right"><i class="fa-solid fa-arrow-right"></i></button></div>
+  </div>
+
+  <div class="container maind">
+   
+
+      <div class="container">
+        <div class="row">
+          <div class="col product">
+            <div class="card product-under" >
+              <img style=" opacity: .9;" class="card-img-top product-image"
+                src="https://m.media-amazon.com/images/I/51TlgAUA0kL._UY675_.jpg"
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class=" card-title productName">Campus Men's BP-726</h4>
+                <h2 class="hide productId">16</h2>
+                <p class=" card-text r">₹<span class="priceValue">200</span></p>
+                <button data-product-id="1" class=" animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+     
+          
+          <div class="col product">
+            <div class="card product-under" >
+              <img class="card-img-top product-image"
+                src="https://m.media-amazon.com/images/I/61Z9LJIYepL._AC_UL400_.jpg"
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class=" card-title productName">Bacca Bucci</h4>
+                <h2 class="hide productId">15</h2>
+                <p class=" card-text ">₹<span class="priceValue">1200</span></p>
+                <button data-name="product" data-product-id="2" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          
+       
+        
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="row">
+         <div class="col product">
+            <div class="card product-under" >
+              <img class="card-img-top"
+                src="https://m.media-amazon.com/images/I/51Tv6GAru2L._AC_UL400_.jpg"
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class=" card-title productName">Generic</h4>
+                <p>
+                  Haaland 9 Football Official Jersey
+                </p>
+                <h2 class="hide productId">5</h2>
+                <p class=" card-text ">₹<span class="priceValue">70</span></p>
+                <button data-name="product" data-product-id="3" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+         <div class="col product">
+            <div class="card product-under" >
+              <img class="card-img-top"
+                src="https://media.istockphoto.com/id/1354020635/photo/white-t-shirt-mockup-front-used-as-design-template-tee-shirt-blank-isolated-on-white.webp?b=1&s=170667a&w=0&k=20&c=X5WLEp3EiqJ7eQqGQPW6Vx8l7joo56cTsCmSOIaAfPI="
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title productName ">Scott International</h4>
+
+                <p>
+                  Men's Regular T-Shirt White
+                </p>
+                <h2 class="hide productId">6</h2>
+                <p class=" card-text ">₹<span class="priceValue">70</span></p>
+                <button data-name="product" data-product-id="4" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col product">
+            <div class="card product-under" >
+              <img class="card-img-top product-image"
+                src="https://m.media-amazon.com/images/I/61++1-R25gL._AC_UL400_.jpg"
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title productName">Sparx</h4>
+                <p>Sparx Mens Sd0734g Sneaker</p>
+                <h2 class="hide productId">9</h2>
+                <p class=" card-text ">₹<span class="priceValue">70</span></p>
+                <button data-name="product" data-product-id="5" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+         
+        
+          <div class="col product">
+            <div class="card product-under" >
+              <img class="card-img-top product-image"
+                src="https://m.media-amazon.com/images/I/81pgBF55PxL._AC_UL400_.jpg"
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class=" card-title productName">Nivia</h4>
+                <p>Nivia Stride 2.0 Athletic Spikes Track & Field Shoes for Mens | TPU Sole with Sublimated Mesh Upper </p>
+                <h2 class="hide productId">12</h2>
+                <p class=" card-text ">₹<span class="priceValue">70</span></p>
+                <button data-product-id="6" class="animated-button addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col product">
+            <div class="card product-under" >
+              <img class="card-img-top product-image"
+                src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title productName">ASIAN</h4>
+                <p>
+                  ASIAN Men's Thunder-01 Casual Sneaker Colour Changing Shoes
+                </p>
+                <h2 class="hide productId">13</h2>
+                <p class=" card-text ">₹<span class="priceValue">70</span></p>
+                <button data-name="product" data-product-id="7" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product">
+            <div class="card product-under" >
+              <img class="card-img-top product-image"
+                src="https://m.media-amazon.com/images/I/71GDzspMgXS._AC_UL400_.jpg"
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class=" card-title productName">Bacca Bucci</h4>
+                <p>Men's Flex 5.0 Running Shoes for Tuff Surface Run with Natural Rubber & Eva Sole</p>
+                <h2 class="hide productId">14</h2>
+                <p class="priceValue card-text">90</span></p>
+                <button data-name="product" data-product-id="8" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    
+  </div>
+
+
+  <div class="producstOnCart ">
+    <div class="overlay"></div>
+    <div class="top">
+      
+      <button  id="closeButton">
+        <i class="fa-solid fa-x"></i>
+      </button>
+      
+      <div class="total-count">
+       <div class="total-amount"> <div><h3>Total:</h3> </div><div class="sum-prices"> <span  id="sum-prices"></span></div></div>
+       </div>
+        </div>
+        <div class="site-toolbar"></div>
+    <ul id="buyItems">
+      <h4 class="empty">Your shopping cart is empty</h4>
+      <li class="buyItem">
+
+
+      </li>
+    </ul>
+    <button class="btn checkout hidden"><h4>Check out</h4></button>
+  </div>
+  </div>
+  
+  </div>
+  </div>
+  <footer class="footer-section">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Location</h4>
+                            <span>3rd Flor, Ratnanabh Complex, Incometex, Ashram Rd, opp. Gujarat Vidyapith Road, Usmanpura, Ahmedabad, Gujarat 380014</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>9878555588</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>mail@info.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            
+                        </div>
+                        <div class="footer-text">
+                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                            elit,Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">services</a></li>
+                           <li><a href="#">Contact</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Contact us</a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                          <p> for upcoming sales and discount</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; , All Right Reserved <a href="#"></a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+  <script src="jquery-3.6.4.min.js" type="text/jQuery"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="main.js"></script>
+  <script src="magicscroll/magicscroll.js"></script>
+</html>
